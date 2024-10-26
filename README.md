@@ -24,3 +24,5 @@ Explanations are written directly in test scripts:
 - [`wait_group`](./experiments/wait_group.go) – Shows that children goroutines are killed as soon as the main routine
   completes (even if the children goroutines had not finished executing) and that this can be prevented with a wait
   group.
+- [`channel_deadlock`](./experiments/channel_deadlock.go) – Shows a deadlock when the receiver is in the same routine as
+  the sender.
