@@ -21,3 +21,6 @@ Explanations are written directly in test scripts:
   their execution and send it to the channel.
 - [`unbuffered_channel_waits_for_receiver_to_send`](./experiments/unbuffered_channel_waits_for_receiver_to_send.go) –
   Shows that nothing is sent to a channel until there is a receiver ready to receive it.
+- [`wait_group`](./experiments/wait_group.go) – Shows that children goroutines are killed as soon as the main routine
+  completes (even if the children goroutines had not finished executing) and that this can be prevented with a wait
+  group.
